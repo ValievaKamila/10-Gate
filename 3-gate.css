@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+#gate {
+    width: fit-content;
+    position: absolute;
+    margin:0 auto;
+    left:0;
+    right:0;
+    perspective: 600px; 
+}
+
+#text {
+    position: relative;
+    bottom: -135px;
+    z-index: -1;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    }
+
+.door {
+    float: left;
+    width: 350px;
+    height: 250px;
+    background-color: #872d62;
+    border: 5px solid #651142;
+    transition-duration: 2s;
+}
+
+#left-door { 
+    transform-origin: left;
+}
+
+#right-door {
+    transform-origin: right;
+}
+
+#gate:hover  #left-door{
+    transform: rotateY(40deg);
+}
+
+#gate:hover #right-door {
+    transform: rotateY(-40deg);
+    }
